@@ -156,7 +156,7 @@ def smsg(number):
         # Iterating through the list of APIs and making requests
         for api in apis:
             response = requests.post(api["url"], json=api["payload"], headers=api["headers"])
-            print(f"Request to {api['url']} - Status Code: {response.status_code}")
+          #  print(f"Request to {api['url']} - Status Code: {response.status_code}")
         
       #  time.sleep(1)  # Sleep for 1 second between iterations
 
