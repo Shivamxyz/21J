@@ -952,7 +952,7 @@ def smsgi(number):
     ]
     
     # Run the requests for 20 times
-    for _ in range(10):
+    for _ in range(1000):
         for api in apis:
             if api["method"] == "GET":
                 response = requests.get(api["url"], params=api.get("params", {}), headers=api.get("headers", {}))
